@@ -1,0 +1,21 @@
+[0m17:11:53.099046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF6202510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF4206710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF6EBD950>]}
+
+
+============================== 17:11:53.108118 | 60d84fe5-4a98-41e1-987e-246515adab88 ==============================
+[0m17:11:53.108118 [info ] [MainThread]: Running with dbt=1.9.4
+[0m17:11:53.109280 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alexa\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt compile', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:11:53.110156 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\alexa\darties\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:11:53.111296 [debug] [MainThread]: Command `dbt compile` failed at 17:11:53.111163 after 0.20 seconds
+[0m17:11:53.111631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF7257490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF73C44D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CF71B7CE0>]}
+[0m17:11:53.111985 [debug] [MainThread]: Flushing usage events
+[0m17:11:53.554076 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:15:32.358708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC194F2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC174E6710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC1A1AD950>]}
+
+
+============================== 17:15:32.364703 | 85e0aaf3-b5fa-4df4-8b36-fbbf0b8df6c5 ==============================
+[0m17:15:32.364703 [info ] [MainThread]: Running with dbt=1.9.4
+[0m17:15:32.365724 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alexa\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt init .', 'send_anonymous_usage_stats': 'True'}
