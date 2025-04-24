@@ -7,9 +7,14 @@ bucket_name = "darties-bucket-2025"
 prefix = ""  # ou ex: "excel/"
 gcs_output_prefix = "csv_clean/"  # Dossier GCS où envoyer les CSV
 
+# Chemin vers le répertoire parent
+credentials_path = os.path.join(os.path.dirname(__file__), '..', 'bq-creds.json')
+
+# Résout les ".." en chemin absolu
+credentials_path = os.path.abspath(credentials_path)
 # Init client avec service account
 client = storage.Client.from_service_account_json(
-    "C:/Users/alexa/Documents/projet_darties_AMOA/bq-creds.json"
+    credentials_path
 )
 bucket = client.bucket(bucket_name)
 
