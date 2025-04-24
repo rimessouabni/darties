@@ -1,0 +1,13 @@
+# Cache / compilés
+__pycache__/
+*.pyc
+*.pyo
+
+# DBT
+dbt_packages/
+target/
+logs/
+
+# Clés / secrets
+*.json
+.env
