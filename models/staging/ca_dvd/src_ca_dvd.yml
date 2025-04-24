@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: src_ca_dvd
+    description: "Staging CA_DVD : HISTO, BUDGET et mensuel"
+    columns:
+      - name: city
+        tests: [not_null]
+      - name: objectif
+        tests:
+          - not_null
+          - expression_is_true:
+              expression: "objectif >= 0"
+      - name: realisation
+        tests: [not_null]
+      - name: file_type
+        tests:
+          - accepted_values:
+              values: ['HISTO','BUDGET','MENSUEL']
+      - name: month
+        tests: [not_null]

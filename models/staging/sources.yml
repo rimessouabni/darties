@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: raw_csv
+    schema: raw_schema   # ← à adapter !
+    tables:
+      - name: ca_dvd
+        identifier: CA_DVD_*
+      - name: ca_fours
+        identifier: CA_Fours_*
+      - name: ca_hifi
+        identifier: CA_Hifi_*
+      - name: darties
+        identifier: darties_*
+      - name: mb_dvd
+        identifier: MB_DVD_*
+      - name: mb_fours
+        identifier: MB_Fours_*
+      - name: mb_hifi
+        identifier: MB_Hifi_*
+      - name: v_dvd
+        identifier: V_DVD_*
